@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://icon.png" type="Texture" id=2]
 [ext_resource path="res://tiles_demo.png" type="Texture" id=3]
@@ -30,23 +30,39 @@ points = PoolVector2Array( 0, 0, 32, 0, 32, 32, 0, 32 )
 } ]
 0/z_index = 0
 
-[sub_resource type="RectangleShape2D" id=3]
+[sub_resource type="CircleShape2D" id=3]
+radius = 31.0
+
+[sub_resource type="SpriteFrames" id=4]
+animations = [ {
+"frames": [ ExtResource( 2 ), null ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
 
 [node name="Node2D" type="Node2D"]
+position = Vector2( 21, 0 )
 
 [node name="TileMap" type="TileMap" parent="."]
 position = Vector2( 1, 0 )
 tile_set = SubResource( 2 )
 cell_size = Vector2( 32, 32 )
+show_collision = true
 format = 1
 tile_data = PoolIntArray( 786436, 0, 0, 851972, 0, 0, 917508, 0, 0, 983044, 0, 0, 1048580, 0, 0, 1048581, 0, 0, 1048582, 0, 0, 1048583, 0, 0, 1048584, 0, 0, 1048585, 0, 0, 1048586, 0, 0, 1048587, 0, 0, 1048588, 0, 0, 1048589, 0, 0, 1048590, 0, 0, 1048591, 0, 0, 1048592, 0, 0, 1048593, 0, 0, 1048594, 0, 0, 1048595, 0, 0, 1048596, 0, 0, 1048597, 0, 0, 1048598, 0, 0, 1048602, 0, 0, 1048603, 0, 0, 1048604, 0, 0, 1048605, 0, 0, 1048606, 0, 0, 1048607, 0, 0, 1114135, 0, 0, 1114136, 0, 0, 1114137, 0, 0, 1769516, 0, 0 )
 
-[node name="Player" type="KinematicBody2D" parent="."]
+[node name="Node2D" type="KinematicBody2D" parent="."]
+position = Vector2( 358, 458 )
 script = ExtResource( 4 )
+__meta__ = {
+"_edit_group_": true
+}
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D"]
+position = Vector2( 0, -31 )
 shape = SubResource( 3 )
 
-[node name="PlayerTemplate" type="Sprite" parent="Player"]
-position = Vector2( 422, 480 )
-texture = ExtResource( 2 )
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Node2D"]
+position = Vector2( 0, -32 )
+frames = SubResource( 4 )

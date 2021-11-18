@@ -9,17 +9,17 @@
 config_version=4
 
 _global_script_classes=[ {
-"base": "Reference",
+"base": "RigidBody2D",
 "class": "Bullet",
 "language": "GDScript",
 "path": "res://enemy/PlayerStuff/bullet.gd"
 }, {
-"base": "Reference",
+"base": "RigidBody2D",
 "class": "Enemy",
 "language": "GDScript",
 "path": "res://enemy/enemy.gd"
 }, {
-"base": "Reference",
+"base": "RigidBody2D",
 "class": "Player",
 "language": "GDScript",
 "path": "res://enemy/PlayerStuff/player.gd"
