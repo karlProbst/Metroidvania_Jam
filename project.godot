@@ -9,20 +9,20 @@
 config_version=4
 
 _global_script_classes=[ {
-"base": "RigidBody2D",
+"base": "Reference",
 "class": "Bullet",
 "language": "GDScript",
-"path": "res://NewFolder/PlayerStuff/bullet.gd"
+"path": "res://enemy/PlayerStuff/bullet.gd"
 }, {
-"base": "RigidBody2D",
+"base": "Reference",
 "class": "Enemy",
 "language": "GDScript",
-"path": "res://NewFolder/enemy.gd"
+"path": "res://enemy/enemy.gd"
 }, {
-"base": "RigidBody2D",
+"base": "Reference",
 "class": "Player",
 "language": "GDScript",
-"path": "res://NewFolder/PlayerStuff/player.gd"
+"path": "res://enemy/PlayerStuff/player.gd"
 } ]
 _global_script_class_icons={
 "Bullet": "",
@@ -33,6 +33,7 @@ _global_script_class_icons={
 [application]
 
 config/name="Metroid Project"
+run/main_scene="res://Node2D.tscn"
 config/icon="res://icon.png"
 
 [input]

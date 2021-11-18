@@ -2,7 +2,7 @@
 
 [ext_resource path="res://icon.png" type="Texture" id=2]
 [ext_resource path="res://tiles_demo.png" type="Texture" id=3]
-[ext_resource path="res://Scripts/PlayerController.gd" type="Script" id=4]
+[ext_resource path="res://scripts/PlayerController.gd" type="Script" id=4]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 0, 0, 32, 0, 32, 32, 0, 32 )

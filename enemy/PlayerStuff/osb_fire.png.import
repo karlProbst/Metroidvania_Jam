@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/osb_fire.png-38b56199af95d07f41d83ea759d0bce6.stex"
+path="res://.import/osb_fire.png-42d9f0b145b609ecece277afee9e9658.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://NewFolder/PlayerStuff/osb_fire.png"
-dest_files=[ "res://.import/osb_fire.png-38b56199af95d07f41d83ea759d0bce6.stex" ]
+source_file="res://enemy/PlayerStuff/osb_fire.png"
+dest_files=[ "res://.import/osb_fire.png-42d9f0b145b609ecece277afee9e9658.stex" ]
 
 [params]
 
