@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/tangran.jpg-58da22150cb630b6e6dc8b15fba71d6e.stex"
+path="res://.import/tangran.jpg-4b5464e9135e9f90bfb6cb6de7d6fdf5.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/tangran.jpg"
-dest_files=[ "res://.import/tangran.jpg-58da22150cb630b6e6dc8b15fba71d6e.stex" ]
+source_file="res://Assets/tangran.jpg"
+dest_files=[ "res://.import/tangran.jpg-4b5464e9135e9f90bfb6cb6de7d6fdf5.stex" ]
 
 [params]
 
